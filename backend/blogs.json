@@ -1,0 +1,113 @@
+[
+  {
+    "Id": 1,
+    "Title": "AI in 2026",
+    "Desc": "Artificial Intelligence is growing rapidly...",
+    "Image": "https://picsum.photos/300/200?1",
+    "Category": "blog",
+    "IsUserCreated": false,
+    "Author": "",
+    "CreatedDate": "2026-02-24T23:44:31.0475052+05:30",
+    "IsActive": true
+  },
+  {
+    "Id": 2,
+    "Title": "React UI Design",
+    "Desc": "React helps developers build reusable UI components.",
+    "Image": "https://picsum.photos/300/200?2",
+    "Category": "blog",
+    "IsUserCreated": false,
+    "Author": "",
+    "CreatedDate": "2026-02-24T23:44:31.0475412+05:30",
+    "IsActive": true
+  },
+  {
+    "Id": 3,
+    "Title": "JavaScript Tips",
+    "Desc": "JavaScript is the backbone of web development.",
+    "Image": "https://picsum.photos/300/200?3",
+    "Category": "blog",
+    "IsUserCreated": false,
+    "Author": "",
+    "CreatedDate": "2026-02-24T23:44:31.0475454+05:30",
+    "IsActive": true
+  },
+  {
+    "Id": 4,
+    "Title": "Web Development",
+    "Desc": "Web development includes frontend and backend...",
+    "Image": "https://picsum.photos/300/200?4",
+    "Category": "blog",
+    "IsUserCreated": false,
+    "Author": "",
+    "CreatedDate": "2026-02-24T23:44:31.0475482+05:30",
+    "IsActive": true
+  },
+  {
+    "Id": 5,
+    "Title": "CSS Mastery",
+    "Desc": "CSS controls the look of websites.",
+    "Image": "https://picsum.photos/300/200?5",
+    "Category": "blog",
+    "IsUserCreated": false,
+    "Author": "",
+    "CreatedDate": "2026-02-24T23:44:31.0475507+05:30",
+    "IsActive": true
+  },
+  {
+    "Id": 6,
+    "Title": "MongoDB Guide",
+    "Desc": "MongoDB is a NoSQL database.",
+    "Image": "https://picsum.photos/300/200?6",
+    "Category": "feed",
+    "IsUserCreated": false,
+    "Author": "",
+    "CreatedDate": "2026-02-24T23:44:31.0475574+05:30",
+    "IsActive": true
+  },
+  {
+    "Id": 7,
+    "Title": "React Libraries",
+    "Desc": "React has a rich ecosystem.",
+    "Image": "https://picsum.photos/300/200?7",
+    "Category": "feed",
+    "IsUserCreated": false,
+    "Author": "",
+    "CreatedDate": "2026-02-24T23:44:31.0475601+05:30",
+    "IsActive": true
+  },
+  {
+    "Id": 8,
+    "Title": "UI Inspiration",
+    "Desc": "Good UI improves user experience.",
+    "Image": "https://picsum.photos/300/200?8",
+    "Category": "feed",
+    "IsUserCreated": false,
+    "Author": "",
+    "CreatedDate": "2026-02-24T23:44:31.0475628+05:30",
+    "IsActive": true
+  },
+  {
+    "Id": 9,
+    "Title": "Interview Questions",
+    "Desc": "Interviews test fundamentals.",
+    "Image": "https://picsum.photos/300/200?9",
+    "Category": "feed",
+    "IsUserCreated": false,
+    "Author": "",
+    "CreatedDate": "2026-02-24T23:44:31.0475655+05:30",
+    "IsActive": true
+  },
+  {
+    "Id": 10,
+    "Title": "Developer Tools",
+    "Desc": "Developer tools improve efficiency.",
+    "Image": "https://picsum.photos/300/200?10",
+    "Category": "feed",
+    "IsUserCreated": false,
+    "Author": "",
+    "CreatedDate": "2026-02-24T23:44:31.0475713+05:30",
+    "IsActive": true
+  }
+  
+  ]
