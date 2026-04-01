@@ -1011,3 +1011,44 @@ body {
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  /* Logo normal */
+  .logo {
+    width: 100%;
+  }
+
+  .more-wrapper {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Search */
+  .search {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+ 
+  @media (max-width: 768px) {
+
+  .signout {
+    margin-top: 10px;
+    width: auto;      
+    align-self: flex-start; 
+  }
+
+}
+}

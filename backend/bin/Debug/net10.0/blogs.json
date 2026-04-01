@@ -163,5 +163,49 @@
     "Author": "tejashreeshejwal.rmdstic.it",
     "CreatedDate": "2026-03-28T19:20:54.7948624+05:30",
     "IsActive": true
+  },
+  {
+    "Id": 16,
+    "Title": "interview",
+    "Desc": "it is a interview preparation.hgbj",
+    "Image": "/uploads/1e9bb144-c744-4bdc-96c5-a0620f79161d.jpg",
+    "Category": "blog",
+    "IsUserCreated": true,
+    "Author": "tejashreeshejwal264",
+    "CreatedDate": "2026-03-29T22:47:38.9500972+05:30",
+    "IsActive": false
+  },
+  {
+    "Id": 17,
+    "Title": "blog",
+    "Desc": "it is a",
+    "Image": "/uploads/d531615d-1ff1-4ff5-9aa1-87972726e944.jpg",
+    "Category": "blog",
+    "IsUserCreated": true,
+    "Author": "anujagholap2",
+    "CreatedDate": "2026-03-31T22:37:17.7106913+05:30",
+    "IsActive": false
+  },
+  {
+    "Id": 18,
+    "Title": "javascript",
+    "Desc": "it is a javascript file.",
+    "Image": "/uploads/c2f2f720-0094-415e-bb65-259ffba0954d.jpg",
+    "Category": "blog",
+    "IsUserCreated": true,
+    "Author": "tejashreeshejwal.rmdstic.it",
+    "CreatedDate": "2026-04-02T00:43:06.13523+05:30",
+    "IsActive": false
+  },
+  {
+    "Id": 19,
+    "Title": "hjnk",
+    "Desc": "nm",
+    "Image": "/uploads/5ba892d9-5a1e-4b1b-9857-bb78eeaf3b4f.jpg",
+    "Category": "blog",
+    "IsUserCreated": true,
+    "Author": "tejashreeshejwal.rmdstic.it",
+    "CreatedDate": "2026-04-02T00:47:27.5126509+05:30",
+    "IsActive": false
   }
 ]

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import "../index.css";
 
 function Navbar({ search, setSearch, setShowSaved }) {
   const navigate = useNavigate();
@@ -65,6 +66,7 @@ function Navbar({ search, setSearch, setShowSaved }) {
         <button className="signout" onClick={handleCreateBlog}>
           Create Blog
         </button>
+       
 
         {/* MORE MENU */}
         <div className="more-wrapper" ref={menuRef}>

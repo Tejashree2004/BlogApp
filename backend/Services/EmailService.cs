@@ -32,21 +32,9 @@ namespace Backend.Services
 
                 string smtpHost = emailSettings["Host"] ?? "smtp.gmail.com";
 
-                // ✅ Dual port fallback: 465 SSL default, fallback to 587 STARTTLS
-                int smtpPort = 465; 
-                SecureSocketOptions sslOption = SecureSocketOptions.SslOnConnect;
-
-                if (!int.TryParse(emailSettings["Port"], out smtpPort))
-                {
-                    smtpPort = 465;
-                    sslOption = SecureSocketOptions.SslOnConnect;
-                }
-                else
-                {
-                    // Optional: if port in config is 587
-                    if (smtpPort == 587)
-                        sslOption = SecureSocketOptions.StartTls;
-                }
+                // ✅ FIXED: Always use 587 + StartTLS (stable for Gmail)
+                int smtpPort = 587;
+                var sslOption = SecureSocketOptions.StartTls;
 
                 // ✅ Create email
                 var emailMessage = new MimeMessage();
@@ -56,7 +44,6 @@ namespace Backend.Services
 
                 var currentTime = DateTime.Now.ToString("f");
 
-                // 🔹 HTML email body with bold OTP
                 string emailBody = $@"
 <html>
 <body style='font-family: Arial, sans-serif; line-height:1.6; color:#111;'>
@@ -82,27 +69,18 @@ namespace Backend.Services
 
 </body>
 </html>
-";       emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html)
+";
+
+                emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html)
                 {
                     Text = emailBody
                 };
 
                 using var client = new SmtpClient();
 
-                try
-                {
-                    // 🔹 Try default SSL connection (465)
-                    await client.ConnectAsync(smtpHost, smtpPort, sslOption);
-                }
-                catch
-                {
-                    // 🔹 If fails, fallback to 587 STARTTLS
-                    smtpPort = 587;
-                    sslOption = SecureSocketOptions.StartTls;
-                    await client.ConnectAsync(smtpHost, smtpPort, sslOption);
-                }
+                // ✅ FIXED: Direct connect (no fallback)
+                await client.ConnectAsync(smtpHost, smtpPort, sslOption);
 
-                // 🔹 Authenticate
                 await client.AuthenticateAsync(senderEmail, senderPassword);
 
                 await client.SendAsync(emailMessage);

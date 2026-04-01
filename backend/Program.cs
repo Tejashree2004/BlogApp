@@ -108,7 +108,7 @@ app.UseStaticFiles();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 // 🔥🔥 CHANGE HERE (Swagger DISABLED)
 if (app.Environment.IsDevelopment())
